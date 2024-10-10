@@ -77,6 +77,52 @@ a:hover {
     height: 55px;
     border-style: inset;
     border: 2px outset;
-    border-color: black;
+    border-color: black;  
  }
- 
+ /* makes the button text large and center*/
+ button{
+   align-self: center;
+   text-align: center;
+   font-size: larger;
+ }
+ /* default size of image*/
+ .img{
+   width:270px;
+   height:450px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ /* size of image when clicked*/
+.large {
+   cursor: zoom-out;
+   scale: 2;
+}
+/* navigation menu size and look*/
+nav a{
+   display: block;
+   font-size: 20pt;
+   color: grey;
+}   
+/*drop down button size*/
+.dropbtn {
+   font-size: 20px;
+   }
+   /*drop down look*/
+.dropdown {
+   display: block;
+   }
+  
+/* how the content looks in the drop down*/
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: grey;
+   min-width: 200px;
+   }
+
+.dropdown-content a {
+   display: block;
+   }
+.dropdown-content a:hover {background-color: grey}
+.show {display:block;}

@@ -4,14 +4,40 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 <style>
   
 </style>
 </head>
 <body>
+<!-- This creates a sidebar customized in css file-->
+<nav>
+  <!--Links to index home-->
+<a onmouseover="mOver(this)" onmouseout="mOut(this)" href="index.html">Home</a>
+<!--links to gihub repo-->
+<a onmouseover="mOver(this)" onmouseout="mOut(this)" href="https://github.com/TiagoRod123">GitHub</a>
+</nav>
+<!--My dropdown menu-->
+<div class="dropdown">
+  <!--mouse over out and click functions-->
+  <button onclick="myMenu()" onmouseover="mOver(this)" onmouseout="mOut(this)" class="dropbtn">TMU</button>
+  <div id="myDropdown" class="dropdown-content">
+    <!--links to tmu homepage-->
+  <a href="https://www.torontomu.ca/">Home</a>
+  <!--links to BTM program page-->
+  <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">BTM Program</a>
+</div>
+<body>
 
 <h1>Tiago Rodrigues</h1>
 <h2>_______________</h2>
+<!--Button that has onclick prompt feature linked to "main.js"-->
+<button onclick="myFunction()">Click Me!</button>
+<!--Text created by "main.js" to display to user-->
+<p id="PerName"></p>
+<!--image of me centered and resized. Also added ID for jave file and a onclick function linked to JS file-->
+<!--Class "img" centers and resizes the image while the "onclick=large(this)" uses the "large" class-->
+<img src="face.jpg" id="face" onclick="large(this)" alt="Person smiling into camera" class="img">
 <h3> <img src="hat.jpg" alt="Graduation Hat" style="width:100px;height:100px;">
   Education <img src="hat.jpg" alt="Graduation Hat" style="width:100px;height:100px;">
 </h3>
