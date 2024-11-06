@@ -11,179 +11,38 @@
 </style>
 </head>
 <body>
-<!-- This creates a sidebar customized in css file-->
-<nav>
-  <!--Links to index home-->
-<a onmouseover="mOver(this)" onmouseout="mOut(this)" href="index.html">Home</a>
-<!--links to gihub repo-->
-<a onmouseover="mOver(this)" onmouseout="mOut(this)" href="https://github.com/TiagoRod123">GitHub</a>
-<!--My dropdown menu-->
-<div class="dropdown">
-  <!--mouse over out and click functions-->
-  <button onclick="myMenu()" onmouseover="mOver(this)" onmouseout="mOut(this)" class="dropbtn">TMU</button>
-  <div id="myDropdown" class="dropdown-content">
-    <!--links to tmu homepage-->
-  <a href="https://www.torontomu.ca/">Home</a>
-  <!--links to BTM program page-->
-  <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">BTM Program</a>
-</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">About Me</a>
+          <div class="dropdown-content">
+            <a href="edu.html">Education</a>
+            <a href="xp.html">Work Experience</a>
+            <a href="https://github.com/TiagoRod123">Github</a>
+          </div>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="form.html">Form</a>
+      </li>     
+    </ul>
+
 <body>
 
 <h1>Tiago Rodrigues</h1>
 <h2>_______________</h2>
 <!--Button that has onclick prompt feature linked to "main.js"-->
-<button onclick="myFunction()">Click Me!</button>
+<button class="button-name" onclick="myFunction()">Click Me!</button>
 <!--Text created by "main.js" to display to user-->
 <p id="PerName"></p>
 <!--image of me centered and resized. Also added ID for jave file and a onclick function linked to JS file-->
 <!--Class "img" centers and resizes the image while the "onclick=large(this)" uses the "large" class-->
 <img src="face.jpg" id="face" onclick="large(this)" alt="Person smiling into camera" class="img">
-<h3> <img src="hat.jpg" alt="Graduation Hat" style="width:100px;height:100px;">
-  Education <img src="hat.jpg" alt="Graduation Hat" style="width:100px;height:100px;">
-</h3>
-<dl>
-<table style="width: 100%;">
-  <tr><td>| University - <a href = "https://www.torontomu.ca/" target="_blank">Toronto Metropolitan University |</td>
-      <td class="text-align:right;">| High school -  Micheal Power St. Joseph |</td></tr>
-</table>
-<table style="width: 111%;">
-  <tr><td>Date: September 2021 - Present</td>
-      <td class="text-align:right;">Date: September 2018 - June 2021</td></tr>
-</table>
-    </dt>         
-  <dd>Program: Business Technology Management (BTM) - BTM fuses technology-related knowledge and creative</dd>
-  <dd> business problem-solving to achieve set goals</dd>
-  
-</dl>
-<h5> Relevant courses</h5>
-<div>
-  <div class="div-5">Description</div>
-  <div class="div-1">Class</div>
-  <div class="div-6">This course provides the fundamental knowledge and skills for designing, developing and
-  managing effective websites for businesses.</div>
-  <div class="div-2"> <a href= "https://www.torontomu.ca/information-technology-management/course-outlines/ITM780.pdf" target="_blank">ITM 780</a>: Web Design and Management</div>
-  <div class="div-7">The objective of this course is to understand the design and analysis of data communications networks 
-    through the introduction of case studies and practical network design methodologies</div>
-  <div class="div-3"><a href= "https://www.torontomu.ca/content/dam/information-technology-management/course-outlines/ITM600.pdf" target="_blank">ITM 600</a>: Data Comm Network Design </div>
-  <div class="div-8">This course uses industry best-practices relating to computer security
-    including schemes for breaking security, and techniques for detecting and preventing security
-    violations.</div>
-  <div class="div-4"><a href= "https://www.torontomu.ca/information-technology-management/course-outlines/ITM820.pdf" target="_blank">ITM 820</a>: Info Sys Security and Privacy</div>
+  <div class="div-10"><a href= "edu.html" >Continue --></a>
   </div>
-<h3> <img src="award.png" alt="Award" style="width:100px;height:100px;">Awards <img src="award.png" alt="Award" style="width:100px;height:100px;"> </h3>
-<ol type="1">
-  <li>Four year high school honour roll </li>
-  <li>Two year university dean's list</li>
-  <li>BTM Co-op program</li>
-</ol>
 
-<h3> <img src="balls.png" alt="Sports Balls" style="width:100px;height:100px;"> Extra-curricular <img src="balls.png" alt="Sports Balls" style="width:100px;height:100px;"></h3>
-<ul>
-  <li>High school Football team</li>
-  <li>High school Basketball Team</li>
-</ul>
-<!--Lab 6-->
-<h1> Questionnair </h1>
-
-<h3>Your Information</h3>
-<!--text boxes that capture the first name,last names and Email ans stores them with the name -->
-<form action="#" id="form">
-  <p>
-  First Name:
-  <input id="Firstname" type="text"> </input>
-  </p>
-    <p>
-    Last Name: 
-    <input id="Lastname" type="text"> </input>
-    </p>
-      <p>
-      Email:
-      <input id="Email" type="text"> </input>
-  
-      <!--Radio buttons, Text box, and dropdown forms that collect and store more data with the respective names-->
-
-      <p>
-      What is your role?
-      </p>
-      
-      <p>
-        <label>
-        <input name="group1" id="Hiring Manager" type="radio" />
-        <span>Hiring Manager</span>
-        </label>
-      </p>
-        <p>
-        <label>
-          <input name="group1" id="Hiring team" type="radio" />
-          <span>Hiring team</span>
-        </label>
-        </p>
-        <p>
-        <label>
-          <input name="group1" id="Employee" type="radio" />
-          <span>Employee</span>
-        </label>
-        
-       </p>
-      
-       <p>
-        Other:
-        <input id="other" type="text" value=""> </input></p>
-      </p>
-      <p> How much experience do you have?
-        <select name="experience">
-        <option value="10+">10+ years</option>
-        <option value="9-6">9-6 years</option>
-        <option value="6-3">6-3 years</option>
-        <option value="3-1">3-1 years</option>
-        <option value="Less then 1">Less then 1 years</option>
-        </select>
-        </p>
-      
-
-
-  <h3>Additional Questions </h3>
-
-  <!--Check box Form code, collects the data-->
-  <h4> What is the best way to contact a applicant? </h4>
-  
-    <p>
-      <label>
-        <input type="checkbox"  />
-        <span>Email</span>
-      </label>
-    </p>
-    <p>
-        <label>
-          <input type="checkbox" />
-          <span>Linkin</span>
-        </label>
-      </p>
-    <p>
-        <label>
-          <input type="checkbox" />
-          <span>Phone</span>
-        </label>
-      </p>
-  
-  <!-- Range that collects the anwser from value 0 to 4 (0 to 5 for the user)-->
-  <h4>What impactful is a personal portfolio during the hiring process? (1 = Not at all | 5 = Very imprtant)</h4>
-
-    <p class="range-field">
-      <input type="range" id="range" min="0" max="4" />
-    </p>
-  <h4> What other things do you look for in a personal portfolio?</h4>
-  <textarea name="message" rows="10" cols="30">
-    Enter text here...
-    </textarea>
-<!--Captures the content of the form and loads it into local storage "onclick" sends it to java file-->
-  <p>
-  <input type="submit" onclick="myfunction()" value="Submit">
-  <!--Resets all the content of the form it gets sent to the java file via function to do this-->
-    <input type="reset" onclick="remove()" value="Reset">
-  </p>
-    
-</form>
 </body>
 </html>
 

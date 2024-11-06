@@ -1,0 +1,133 @@
+<!--Tiago Rodrigues-->
+<!--Student #:501120484-->
+<!--Lab 6-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <script src="form.js"></script>
+</head>
+<body>
+    <h3>Tiago Rodrigues</h3>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About Me</a>
+              <div class="dropdown-content">
+                <a href="edu.html">Education</a>
+                <a href="xp.html">Work Experience</a>
+                <a href="https://github.com/TiagoRod123">Github</a>
+              </div>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>     
+        </ul>
+<body>
+
+  <h1> Questionnair </h1>
+
+<h3>Your Information</h3>
+<!--text boxes that capture the first name,last names and Email ans stores them with the name -->
+<form action="#" id="form">
+  <p>
+  First Name:
+  <input id="Firstname" type="text"> </input>
+  </p>
+    <p>
+    Last Name: 
+    <input id="Lastname" type="text"> </input>
+    </p>
+      <p>
+      Email:
+      <input id="Email" type="text"> </input>
+  
+      <!--Radio buttons, Text box, and dropdown forms that collect and store more data with the respective names-->
+
+      <p>
+      What is your role?
+      </p>
+      
+      <p>
+        <label>
+        <input name="group1" id="Hiring Manager" type="radio" />
+        <span>Hiring Manager</span>
+        </label>
+      </p>
+        <p>
+        <label>
+          <input name="group1" id="Hiring team" type="radio" />
+          <span>Hiring team</span>
+        </label>
+        </p>
+        <p>
+        <label>
+          <input name="group1" id="Employee" type="radio" />
+          <span>Employee</span>
+        </label>
+        
+       </p>
+      
+       <p>
+        Other:
+        <input id="other" type="text" value=""> </input></p>
+      </p>
+      <p> How much experience do you have?
+        <select name="experience">
+        <option value="10+">10+ years</option>
+        <option value="9-6">9-6 years</option>
+        <option value="6-3">6-3 years</option>
+        <option value="3-1">3-1 years</option>
+        <option value="Less then 1">Less then 1 years</option>
+        </select>
+        </p>
+      
+
+
+  <h3>Additional Questions </h3>
+
+  <!--Check box Form code, collects the data-->
+  <h4> What is the best way to contact a applicant? </h4>
+  
+    <p>
+      <label>
+        <input type="checkbox"  />
+        <span>Email</span>
+      </label>
+    </p>
+    <p>
+        <label>
+          <input type="checkbox" />
+          <span>Linkin</span>
+        </label>
+      </p>
+    <p>
+        <label>
+          <input type="checkbox" />
+          <span>Phone</span>
+        </label>
+      </p>
+  
+  <!-- Range that collects the anwser from value 0 to 4 (0 to 5 for the user)-->
+  <h4>What impactful is a personal portfolio during the hiring process? (1 = Not at all | 5 = Very imprtant)</h4>
+
+    <p class="range-field">
+      <input type="range" id="range" min="0" max="4" />
+    </p>
+  <h4> What other things do you look for in a personal portfolio?</h4>
+  <textarea name="message" rows="10" cols="30">
+    Enter text here...
+    </textarea>
+<!--Captures the content of the form and loads it into local storage "onclick" sends it to java file-->
+  <p>
+  <input type="submit" onclick="myfunction()" value="Submit">
+  <!--Resets all the content of the form it gets sent to the java file via function to do this-->
+    <input type="reset" onclick="remove()" value="Reset">
+  </p>
+</form>
+</body>
+</html>
