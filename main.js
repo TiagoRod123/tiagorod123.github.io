@@ -43,3 +43,21 @@ obj.innerHTML = "Suprise!"
 function mOut(obj){
     obj.innerHTML = "Home to reset!";
 }
+
+function fontsizelarge() {
+    // Toggling the class "fontsize" on the body
+    document.body.classList.toggle("fontsizelarge");
+  }
+  function call() {
+    // Toggling the class "fontsize" on the body
+    document.body.classList.toggle("call");
+  }
+  function golf(){
+    let golf = alert("Glowing sunset and a green grass field with hills in a even pattern, with a white golf cart on a paved road.");
+  }
+  function bills(){
+    let bills = alert("Glowing sunset on a cold day and a football field with the words Bills paved at both ends and many fans in attendance.");
+  }
+  function baseball(){
+    let baseball = alert("A dark sky with a green field showcasing a baseball game with fans in attendance.");
+  }
