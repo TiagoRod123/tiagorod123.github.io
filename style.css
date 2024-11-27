@@ -299,3 +299,25 @@ body.call{
    -ms-transform: translateX(-5%);
    transform: translateX(-5%);
 }
+.fa {
+   padding: 100px;
+   font-size: 100px;
+   width: 100px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+}
+.fa:hover {
+   opacity: 0.7;
+   color: white;
+}
+.fa:link {
+   color: white;
+}
+.fa:active{
+   color: white;
+}
+.fa-instagram {
+   background: #125688;
+   color: white;
+}
